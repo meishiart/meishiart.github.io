@@ -7,3 +7,33 @@
 .wrapper {
     max-width: 85vw;
 }
+
+.boxcontain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#tall  .imgbox {
+        max-height: fit-content;
+        overflow: hidden;
+    }
+
+.imgbox {
+    position: relative;
+    max-width: 27.5vw;
+    min-width: 250px;
+    max-height: 300px;
+    margin: 5px 0 5px 0;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.longimg {
+    // flex-grow: 3;
+}
