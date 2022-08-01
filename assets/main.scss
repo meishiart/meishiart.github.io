@@ -302,9 +302,12 @@ a.button{
         position: relative;
         background: white;
         transition: all .15s ease-in-out;
-        width: 48%;
         margin: 10px 10px 0 0 ;
-      }
+        &.small {
+            width: 48%;
+        }
+  
+    }
       .box::before {
           content: '';
           position: absolute;
@@ -328,6 +331,10 @@ a.button{
         -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
         img {
             padding-bottom: 20px;
+        }
+        p {
+            font-size: .7em;
+            line-height: 25px;
         }
     }
       .box-content {
