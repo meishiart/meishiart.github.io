@@ -35,9 +35,10 @@ plugins:
   - jekyll-feed
 
 header_pages:
+  - index.html
+  - about.html
   - portfolio.html
   - recognitions.html
-  - about.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
