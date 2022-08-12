@@ -1,0 +1,154 @@
+--- 
+--- 
+
+#landingimg {
+    min-height: 600px;
+    object-fit: cover;
+}
+
+.design {
+    .imgbox {
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.368);
+    }
+}
+
+#design {
+    .modal-content {
+        min-width: 95vw;
+    }
+}
+
+//portfolio modal image boxes
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+
+}
+
+.modal-content {
+    align-self: center;
+    // background-color: white;
+    // padding: 1rem 1.5rem;
+    // width: 24rem;
+    // border-radius: 0.5rem;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    max-width: 60%;
+    max-height: 90%;
+    overflow: auto;
+    color: whitesmoke;
+}
+
+.btn-close {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    border: white 2px solid;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modaltrigger {
+    cursor: pointer;
+
+    &:hover {
+        opacity: .7;
+        transition: 0.3s;
+    }
+}
+
+
+//buttons and stuff
+
+
+//flex layouts
+.portfolio-landing {
+    position: absolute;
+    overflow: hidden;
+    background-color: aquamarine;
+    min-height: 500px;
+
+    img {
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.buttonbox {
+    top: 55%;
+    left: 25%;
+    width: 50%;
+    // margin: 25px;
+    position: absolute;
+    // margin: auto;
+    // display: flex;
+    // justify-content: space-between;
+
+    .portbutton {
+        background-color: whitesmoke;
+        opacity: 1;
+        width: 175px;
+        border-radius: 15px;
+        padding-top: 15px;
+        border: none;
+        cursor: pointer;
+
+        :hover {
+            opacity: 1;
+            transition: .2s;
+        }
+
+        p {
+            line-height: 25px;
+            font-size: large;
+        }
+    }
+
+}
+
+#realism,
+#abstract {
+    justify-content: flex-start;
+}
+
+.imgbox {
+    position: relative;
+    max-width: 27.5vw;
+    min-width: 150px;
+    max-height: 300px;
+    margin: 5px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
