@@ -34,8 +34,10 @@ plugins:
 header_pages:
   - index.html
   - about.html
+  - classes.html
   - portfolio.html
   - recognitions.html
+  - contact.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
