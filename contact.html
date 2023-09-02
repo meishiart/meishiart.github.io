@@ -5,7 +5,8 @@ style: contact.css
 ---
 
     <div class="banner">
-        <h1 class="bannertext">Contact</h1>
+        <h1 class="bannertext en">Contact</h1>
+        <h1 class="bannertext cn" style="display:none">联系我们</h1>
     </div>
     <img class="wide" id="home-img" src="imgs/bannermtns.jpg" alt="">
 
@@ -14,16 +15,21 @@ style: contact.css
         <form target="_blank" action="https://formsubmit.co/4d4bb0a9097827d8cd24228a818f31cc" method="POST">
             <div class="form-group">
 
-                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                <input type="text" name="name" class="form-control en" placeholder="Full Name" required>
+                <input type="text" name="name" class="form-control cn" style="display:none" placeholder="姓名" required>
             </div>
-            <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email Address"
-                    required>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control en" placeholder="Email Address"   required>
+                <input type="email" name="email" class="form-control cn"  style="display:none" placeholder="电子邮件"   required>
             </div>
 
 
             <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                <textarea placeholder="Your Message" class="form-control en" name="message" rows="10" required></textarea>
+                <textarea placeholder="正文" class="form-control cn" style="display:none" name="message" rows="10" required></textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            <button type="submit" class="btn btn-lg btn-dark btn-block en">Submit Form</button>
+            <button type="submit" class="btn btn-lg btn-dark btn-block cn" style="display:none">递交</button>
+            
         </form>
     </div>
