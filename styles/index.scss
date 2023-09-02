@@ -53,6 +53,28 @@
             transition: .3s;
         }
     }
+    .thumb-box-wide {
+        width: 444px;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 4px 4px 2px#76aed1;
+        padding: 15px;
+        margin: 30px 70px;
+        background-color: white;
+        @media (max-width: 666px) {
+            width: 270px;
+        }
+        h3 {
+            margin-left: 30px;
+        }
+        img {
+            margin: 5px;
+        }
+        &:hover {
+            box-shadow: 7px 7px 2px#76aed1;
+            transition: .3s;
+        }
+    }
     a {
         color: #0e2b3f;
         &:hover {
